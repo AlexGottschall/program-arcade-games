@@ -17,21 +17,23 @@
      while x < 10:
          print(x)
          x = x + 2
-     
+     Prints 0 - 8, counting by 2, on separate lines.
+     Result: Same.
   2. What does this program print out?
      
      x = 1
      while x < 64:
          print(x)
          x = x * 2
-     
+     Prints 1 - 32, by multiples of 2, on separate lines.
+     Result: Same.
   3. Why is the and x >= 0 not needed?
      
      x = 0
      while x < 10 and x >= 0:
          print(x)
          x = x + 2
-     
+     You don't need to check for things that are always true.
   4. What does this program print out? (0 pts) Explain. (1 pt)
      
      x = 5
@@ -40,7 +42,7 @@
          if x == "1":
              print("Blast off!")
          x = x - 1
-     
+     Counts down from 5 to 1. Doesn't print "Blast off!" because an integer can't be equal to a string.
   5. Fix the following code so it doesn't repeat forever, and keeps asking
      the user until he or she enters a number greater than zero: (2 pts)
      
@@ -48,24 +50,24 @@
 
      while x <= 0:
          print("Too small. Enter a number greater than zero: ")
-     
+     Change ^^^ this into "x = input("etc. etc. etc.: ")
   6. Fix the following code:
      
      x = 10
 
-     while x < 0:
+     while x < 0:  < -- change "<" to ">"
          print(x)
-         x - 1
+         x - 1 < -- change "x - 1" to "x = x - 1"
 
      print("Blast-off")
      
   7. What is wrong with this code? It runs but it has unnecessary code.
      Find all the unneeded code. Also, answer why it is not needed. (1 pt)
      
-     i = 0
+     i = 0 < -- doesn't need; it is defaulted to 0
      for i in range(10):
          print(i)
-         i += 1
+         i += 1 < -- doesn't need; it already prints the range without counting
      
   8. Explain why the values printed for x are so different. (2 pts)
      
